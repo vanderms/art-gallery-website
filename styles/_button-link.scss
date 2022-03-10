@@ -1,0 +1,46 @@
+@use './mixins' as *;
+
+.rt-button-link {
+  display: inline-flex;
+  height: rem(72);
+
+  &.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .text,
+  .pattern {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text {
+    padding-inline: rem(32) rem(35);
+    background-color: color(almost-black);
+    color: color(white);
+    font-family: $big-shoulders-display;
+    font-size: rem(20);
+    font-weight: 800;
+    letter-spacing: 3.375px;
+
+    &:hover {
+      background-color: color(gold);
+    }
+  }
+
+  .pattern {
+    background-color: color(gold);
+    width: rem(56);
+  }
+
+  &:hover {
+    .text {
+      background-color: color(gold);
+    }
+    .pattern {
+      background-color: color(almost-black);
+    }
+  }
+}

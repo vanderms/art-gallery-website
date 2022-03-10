@@ -9,7 +9,7 @@
 $breakpoints: (
   mobile: rem(350),
   tablet: rem(720),
-  laptop: rem(1120),
+  laptop: rem(1200),
   desktop: rem(1520),
 );
 
@@ -35,3 +35,5 @@ $colors: (
 @function color($name) {
   @return map.get($colors, $name);
 }
+
+$big-shoulders-display: 'Big Shoulders Display', cursive;

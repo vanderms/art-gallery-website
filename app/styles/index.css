@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@300&display=swap");
 *,
 *::before,
 *::after {
@@ -18,4 +18,71 @@ ul {
   list-style-type: none;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../styles/_html.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AACQ;AAER;AAAA;AAAA;EAGE;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE%22,%22file%22:%22index.css%22%7D */
+.rt-button-link {
+  display: inline-flex;
+  height: 4.5rem;
+}
+.rt-button-link.reverse {
+  flex-direction: row-reverse;
+}
+.rt-button-link .text,
+.rt-button-link .pattern {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rt-button-link .text {
+  padding-inline: 2rem 2.1875rem;
+  background-color: #151515;
+  color: #fff;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 3.375px;
+}
+.rt-button-link .text:hover {
+  background-color: #d5966c;
+}
+.rt-button-link .pattern {
+  background-color: #d5966c;
+  width: 3.5rem;
+}
+.rt-button-link:hover .text {
+  background-color: #d5966c;
+}
+.rt-button-link:hover .pattern {
+  background-color: #151515;
+}
+
+.rt-section-hero .background .bg-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rt-section-hero .background .bg-image {
+  width: 100%;
+  height: auto;
+}
+
+.rt-section-hero .content {
+  margin: 2rem 4.2666666667% 0;
+}
+.rt-section-hero .content .title {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: clamp(3.75rem, 9.1145833333vw, 6rem);
+  font-weight: 900;
+  line-height: 0.9166666667;
+  color: #151515;
+}
+.rt-section-hero .content .description {
+  margin-top: 2rem;
+  font-size: clamp(1.125rem, 2.34375vw, 1.375rem);
+  line-height: 1.5555555556;
+  color: #444444;
+}
+.rt-section-hero .content .rt-button-link {
+  margin-top: 2rem;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../styles/_html.scss%22,%22../../styles/_button-link.scss%22,%22../../styles/_mixins.scss%22,%22../../styles/_section-hero.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AACQ;AACR;AAAA;AAAA;EAGE;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;;;AChBF;EACE;EACA;;AAEA;EACE;;AAGF;AAAA;EAEE;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA,aCgBoB;EDfpB;EACA;EACA;;AAEA;EACE;;AAIJ;EACE;EACA;;AAIA;EACE;;AAEF;EACE;;;AEtCJ;EACE;EACA;EACA;;AAGF;EACE;EACA;;;AAIJ;EACE;;AAEA;EACE,aDkBoB;ECjBpB;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA;;AAGF;EACE%22,%22file%22:%22index.css%22%7D */

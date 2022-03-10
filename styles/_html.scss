@@ -1,6 +1,5 @@
 @use './mixins' as *;
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@300&display=swap');
 *,
 *::before,
 *::after {
@@ -19,5 +18,3 @@ a {
 ul {
   list-style-type: none;
 }
-
-

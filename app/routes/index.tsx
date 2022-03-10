@@ -1,7 +1,9 @@
+import SectionHero from "~/components/sections/hero/hero";
+
 export default function Index() {
   return (
     <main>
-      Is it working?
+      <SectionHero/>
     </main>
   );
 }

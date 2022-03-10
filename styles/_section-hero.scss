@@ -1,0 +1,38 @@
+@use './mixins' as *;
+@use 'sass:math';
+
+.rt-section-hero .background {
+  .bg-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bg-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.rt-section-hero .content {
+  margin: rem(32) math.percentage(16 / 375) 0;
+
+  .title {
+    font-family: $big-shoulders-display;
+    font-size: clamp(rem(60), calc((70 / 768) * 100vw), rem(96));
+    font-weight: 900;
+    line-height: math.div(55, 60);
+    color: color(almost-black);
+  }
+
+  .description {
+    margin-top: rem(32);
+    font-size: clamp(rem(18), calc((18 / 768) * 100vw), rem(22));
+    line-height: math.div(28, 18);
+    color: color(dark-grey);
+  }
+
+  .rt-button-link {
+    margin-top: rem(32);
+  }
+}
