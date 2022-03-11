@@ -1,0 +1,32 @@
+@use './mixins' as *;
+@use 'sass:math';
+
+.rt-footer {
+  margin-top: rem(120);
+  @include size(100%, rem(336));
+  padding: rem(48) rem(32);
+  background-color: color(almost-black);
+  color: color(white);
+  display: grid;
+  gap: rem(38);
+
+  .logo {
+    width: 10ch;
+    font-family: $big-shoulders-display;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: math.div(20, 24);
+    text-transform: uppercase;
+  }
+
+  .description {    
+    font-size: rem(16);
+    line-height: math.div(26, 16);   
+  }
+
+  .social-links{
+    display: flex;
+    align-items: center;
+    gap: rem(20);
+  }
+}
