@@ -1,6 +1,14 @@
 @use './mixins' as *;
 @use 'sass:math';
 
+.rt-section-hero {
+  @include media(tablet) {
+    display: grid;
+    grid-template-columns: rem(437) 1fr;
+    padding-right: math.percentage(40 / 768);
+  }
+}
+
 .rt-section-hero .background {
   .bg-image-container {
     display: flex;
@@ -17,6 +25,11 @@
 .rt-section-hero .content {
   margin: rem(32) math.percentage(16 / 375) 0;
 
+  @include media(tablet) {
+    margin: rem(145) 0 0 rem(-48);
+    max-width: rem(514);
+  }
+
   .title {
     font-family: $big-shoulders-display;
     font-size: clamp(rem(60), calc((70 / 768) * 100vw), rem(96));
@@ -30,9 +43,17 @@
     font-size: clamp(rem(18), calc((18 / 768) * 100vw), rem(22));
     line-height: math.div(28, 18);
     color: color(dark-grey);
+
+    @include media(tablet) {
+      margin-top: rem(48);
+    }
   }
 
   .rt-button-link {
     margin-top: rem(32);
+
+    @include media(tablet) {
+      margin-top: rem(48);
+    }
   }
 }

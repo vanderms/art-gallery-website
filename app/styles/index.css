@@ -55,6 +55,14 @@ ul {
   background-color: #151515;
 }
 
+@media screen and (min-width: 45rem) {
+  .rt-section-hero {
+    display: grid;
+    grid-template-columns: 27.3125rem 1fr;
+    padding-right: 5.2083333333%;
+  }
+}
+
 .rt-section-hero .background .bg-image-container {
   display: flex;
   justify-content: center;
@@ -67,6 +75,12 @@ ul {
 
 .rt-section-hero .content {
   margin: 2rem 4.2666666667% 0;
+}
+@media screen and (min-width: 45rem) {
+  .rt-section-hero .content {
+    margin: 9.0625rem 0 0 -3rem;
+    max-width: 32.125rem;
+  }
 }
 .rt-section-hero .content .title {
   font-family: "Big Shoulders Display", cursive;
@@ -81,8 +95,18 @@ ul {
   line-height: 1.5555555556;
   color: #444444;
 }
+@media screen and (min-width: 45rem) {
+  .rt-section-hero .content .description {
+    margin-top: 3rem;
+  }
+}
 .rt-section-hero .content .rt-button-link {
   margin-top: 2rem;
 }
+@media screen and (min-width: 45rem) {
+  .rt-section-hero .content .rt-button-link {
+    margin-top: 3rem;
+  }
+}
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../styles/_html.scss%22,%22../../styles/_button-link.scss%22,%22../../styles/_mixins.scss%22,%22../../styles/_section-hero.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AACQ;AACR;AAAA;AAAA;EAGE;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;;;AChBF;EACE;EACA;;AAEA;EACE;;AAGF;AAAA;EAEE;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA,aCgBoB;EDfpB;EACA;EACA;;AAEA;EACE;;AAIJ;EACE;EACA;;AAIA;EACE;;AAEF;EACE;;;AEtCJ;EACE;EACA;EACA;;AAGF;EACE;EACA;;;AAIJ;EACE;;AAEA;EACE,aDkBoB;ECjBpB;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA;;AAGF;EACE%22,%22file%22:%22index.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../styles/_html.scss%22,%22../../styles/_button-link.scss%22,%22../../styles/_mixins.scss%22,%22../../styles/_section-hero.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AACQ;AACR;AAAA;AAAA;EAGE;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;;;AChBF;EACE;EACA;;AAEA;EACE;;AAGF;AAAA;EAEE;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA,aCgBoB;EDfpB;EACA;EACA;;AAEA;EACE;;AAIJ;EACE;EACA;;AAIA;EACE;;AAEF;EACE;;;ACzBJ;ECdF;IAEI;IACA;IACA;;;;AAKF;EACE;EACA;EACA;;AAGF;EACE;EACA;;;AAIJ;EACE;;ADRA;ECOF;IAII;IACA;;;AAGF;EACE,aDKoB;ECJpB;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA;;AD3BF;ECuBA;IAOI;;;AAIJ;EACE;;ADnCF;ECkCA;IAII%22,%22file%22:%22index.css%22%7D */
