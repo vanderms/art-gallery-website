@@ -47,13 +47,12 @@
   }
 
   .content {
-    margin-top: rem(9);
-    margin-bottom: rem(16);
+    margin: rem(9) auto rem(16) auto;
+    max-width: rem(343);
 
     @include media(tablet) {
       max-width: rem(223);
-      margin-top: rem(36);
-      margin-bottom: 0;
+      margin: rem(36) 0 0 0;       
     }
 
     @include media(laptop) {
