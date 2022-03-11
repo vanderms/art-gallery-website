@@ -14,7 +14,7 @@ export default function ResponsivePicture({ name }: { name: string }) {
       <source
         srcSet={`/assets/mobile/${name}.jpg, /assets/mobile/${name}@2x.jpg 2x`}
       />
-      <img className="bg-image" src={`/assets/mobile/${name}.jpg`} alt="" />
+      <img className="image" src={`/assets/mobile/${name}.jpg`} alt="" />
     </picture>
   );
 }

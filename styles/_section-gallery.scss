@@ -8,13 +8,44 @@
   grid-template-columns: 100%;
   gap: rem(16);
 
+  @include media(tablet) {
+    @include margin-container-tablet;
+    gap: rem(11);
+    grid-template-columns: math.percentage(280/689) 1fr math.percentage(280/689);
+    grid-template-rows: rem(400) rem(313) auto;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .image-container:nth-of-type(1) {
     order: -1;
+
+    @include media(tablet) {
+      order: unset;
+      grid-column: 2 / span 2;
+    }
+  }
+
+  .image-container:nth-of-type(2) {
+    @include media(tablet) {
+      grid-column: 1 / span 2;
+      grid-row: 2 / span 2;
+    }
   }
 
   .content {
     margin-top: rem(9);
     margin-bottom: rem(16);
+
+    @include media(tablet) {
+      max-width: rem(223);
+      margin-top: rem(36);
+      margin-bottom: 0;
+    }
 
     .h2-title {
       font-family: $big-shoulders-display;
@@ -30,12 +61,23 @@
       font-size: rem(18);
       line-height: math.div(28, 18);
       color: color(dark-grey);
+
+      @include media(tablet) {
+        margin-top: rem(24);
+      }
     }
   }
 
   .inspired {
     padding: rem(48) math.percentage(24 / 343) rem(47);
     background-color: color(almost-black);
+
+    @include media(tablet) {
+      padding: 0 rem(28) 0 rem(29);
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
 
     .h3-title {
       font-family: $big-shoulders-display;
@@ -46,7 +88,7 @@
       text-transform: uppercase;
     }
 
-    .h3-description {     
+    .h3-description {
       margin-top: rem(24);
       font-size: rem(18);
       line-height: math.div(28, 18);
