@@ -7,26 +7,43 @@
   padding: rem(48) rem(32);
   background-color: color(almost-black);
   color: color(white);
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: rem(38);
 
-  .logo {
-    width: 10ch;
+  @include media(tablet){
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: rem(216);
+    padding: rem(56) rem(40);
+
+  }
+
+  .logo {    
     font-family: $big-shoulders-display;
     font-weight: 900;
     font-size: 24px;
     line-height: math.div(20, 24);
     text-transform: uppercase;
+    width: rem(120);
   }
 
   .description {    
     font-size: rem(16);
     line-height: math.div(26, 16);   
+
+    @include media(tablet){
+      max-width: rem(281);
+      margin-left: rem(-39);
+    }
   }
 
   .social-links{
     display: flex;
     align-items: center;
     gap: rem(20);
+    width: rem(100);
+
   }
 }
