@@ -1,7 +1,7 @@
 @use './mixins' as *;
 @use 'sass:math';
 
-$padding-laptop: calc(Min(50vw, 760px) - 550px);
+
 
 @mixin heading-typography {
   font-family: $big-shoulders-display;
@@ -20,7 +20,8 @@ $padding-laptop: calc(Min(50vw, 760px) - 550px);
 
   @include media(laptop) {
     display: block;
-    padding: rem(189) $padding-laptop 0;
+    padding-top: rem(189);
+    @include container-laptop;
   }
 }
 
@@ -37,7 +38,7 @@ $padding-laptop: calc(Min(50vw, 760px) - 550px);
     &::before {
       content: '';
       display: block;
-      @include size(calc($padding-laptop + rem(285)), rem(800));
+      @include size(calc($padding-left-laptop + rem(285)), rem(800));
       background-color: color(almost-black);
     }
   }
@@ -76,7 +77,7 @@ $padding-laptop: calc(Min(50vw, 760px) - 550px);
     max-width: unset;
     width: 100%;
     justify-content: space-between;
-    gap: rem(64);
+    gap: rem(48);
   }
 
   .title {
@@ -105,6 +106,7 @@ $padding-laptop: calc(Min(50vw, 760px) - 550px);
 
     @include media(laptop) {
       width: rem(350);
+      line-height: math.div(32, 22);
     }
   }
 

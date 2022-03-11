@@ -71,7 +71,8 @@ main {
 @media screen and (min-width: 75rem) {
   .rt-section-hero {
     display: block;
-    padding: 11.8125rem calc(min(50vw, 760px) - 550px) 0;
+    padding-top: 11.8125rem;
+    padding-inline: calc(min(50vw, 760px) - 555px) calc(min(50vw, 760px) - 556px);
   }
 }
 
@@ -88,7 +89,7 @@ main {
   .rt-section-hero .background::before {
     content: "";
     display: block;
-    width: calc(min(50vw, 760px) - 550px + 17.8125rem);
+    width: calc(min(50vw, 760px) - 556px + 17.8125rem);
     height: 50rem;
     background-color: #151515;
   }
@@ -128,7 +129,7 @@ main {
     max-width: unset;
     width: 100%;
     justify-content: space-between;
-    gap: 4rem;
+    gap: 3rem;
   }
 }
 .rt-section-hero .content .title {
@@ -165,6 +166,7 @@ main {
 @media screen and (min-width: 75rem) {
   .rt-section-hero .content .description {
     width: 21.875rem;
+    line-height: 1.4545454545;
   }
 }
 @media screen and (min-width: 75rem) {
@@ -173,4 +175,4 @@ main {
   }
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../styles/_html.scss%22,%22../../styles/_button-link.scss%22,%22../../styles/_mixins.scss%22,%22../../styles/_section-hero.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AACQ;AACR;AAAA;AAAA;EAGE;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA;EACA;;;ACtBF;EACE;EACA;;AAEA;EACE;;AAGF;AAAA;EAEE;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA,aCgBoB;EDfpB;EACA;EACA;;AAEA;EACE;;AAIJ;EACE;EACA;;AAIA;EACE;;AAEF;EACE;;;ACzBJ;ECJF;IAEI;IACA;IACA;;;ADAF;ECJF;IAQI;IACA;;;;ADLF;ECSF;IAEI;IACA;IACA;IACA;IACA;IACA;IACA;;EAEA;IACE;IACA;IDfJ,OCgBkB;IDflB,QCeoD;IAChD;;;AAIJ;EACE;EACA;EACA;;AD9BF;EC2BA;IAMI;;;AAIJ;EACE;EACA;;;AAIJ;EACE;EACA;EACA;EACA;;AD/CA;EC2CF;IAOI;IACA;IACA;;;ADpDF;EC2CF;IAaI;IACA;IACA;IACA;IACA;IACA;;;AAGF;EA3EA,aDgCsB;EC/BtB;EACA;EACA;EACA;;ADOA;ECgEA;IAII;IACA;;EAEA;IACE;IACA;IACA;IACA;IAtFN,aDgCsB;IC/BtB;IACA;IACA;IACA;IAoFM;IACA;;;AAKN;EACE;EACA;EACA;;ADtFF;ECmFA;IAMI;;;ADzFJ;EC6FA;IAEI%22,%22file%22:%22index.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../styles/_html.scss%22,%22../../styles/_button-link.scss%22,%22../../styles/_mixins.scss%22,%22../../styles/_section-hero.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AACQ;AACR;AAAA;AAAA;EAGE;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA;EACA;;;ACtBF;EACE;EACA;;AAEA;EACE;;AAGF;AAAA;EAEE;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA,aCgBoB;EDfpB;EACA;EACA;;AAEA;EACE;;AAIJ;EACE;EACA;;AAIA;EACE;;AAEF;EACE;;;ACzBJ;ECJF;IAEI;IACA;IACA;;;ADAF;ECJF;IAQI;IACA;IDuBF;;;;AA5BA;ECUF;IAEI;IACA;IACA;IACA;IACA;IACA;IACA;;EAEA;IACE;IACA;IDhBJ,OCiBkB;IDhBlB,QCgByD;IACrD;;;AAIJ;EACE;EACA;EACA;;AD/BF;EC4BA;IAMI;;;AAIJ;EACE;EACA;;;AAIJ;EACE;EACA;EACA;EACA;;ADhDA;EC4CF;IAOI;IACA;IACA;;;ADrDF;EC4CF;IAaI;IACA;IACA;IACA;IACA;IACA;;;AAGF;EA5EA,aDgCsB;EC/BtB;EACA;EACA;EACA;;ADOA;ECiEA;IAII;IACA;;EAEA;IACE;IACA;IACA;IACA;IAvFN,aDgCsB;IC/BtB;IACA;IACA;IACA;IAqFM;IACA;;;AAKN;EACE;EACA;EACA;;ADvFF;ECoFA;IAMI;IACA;;;AD3FJ;EC+FA;IAEI%22,%22file%22:%22index.css%22%7D */
