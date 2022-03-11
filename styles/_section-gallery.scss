@@ -1,0 +1,56 @@
+@use './mixins' as *;
+@use 'sass:math';
+
+.rt-section-gallery {
+  margin-top: rem(120);
+  @include margin-container-mobile;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: rem(16);
+
+  .image-container:nth-of-type(1) {
+    order: -1;
+  }
+
+  .content {
+    margin-top: rem(9);
+    margin-bottom: rem(16);
+
+    .h2-title {
+      font-family: $big-shoulders-display;
+      font-weight: 900;
+      font-size: rem(50);
+      text-transform: uppercase;
+      line-height: math.div(45, 50);
+      color: color(almost-black);
+    }
+
+    .h2-description {
+      margin-top: rem(21);
+      font-size: rem(18);
+      line-height: math.div(28, 18);
+      color: color(dark-grey);
+    }
+  }
+
+  .inspired {
+    padding: rem(48) math.percentage(24 / 343) rem(47);
+    background-color: color(almost-black);
+
+    .h3-title {
+      font-family: $big-shoulders-display;
+      font-weight: 900;
+      font-size: rem(50);
+      line-height: math.div(45, 50);
+      color: color(white);
+      text-transform: uppercase;
+    }
+
+    .h3-description {     
+      margin-top: rem(24);
+      font-size: rem(18);
+      line-height: math.div(28, 18);
+      color: color(white);
+    }
+  }
+}

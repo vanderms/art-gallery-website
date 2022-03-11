@@ -44,3 +44,7 @@ $padding-left-laptop: calc(Min(50vw, 760px) - 556px);
 @mixin container-laptop {
   padding-inline: $padding-right-laptop $padding-left-laptop;
 }
+
+@mixin margin-container-mobile{
+  margin-inline: math.percentage(16/375);
+}
