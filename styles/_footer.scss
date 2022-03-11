@@ -11,39 +11,62 @@
   flex-direction: column;
   gap: rem(38);
 
-  @include media(tablet){
+  @include media(tablet) {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
     height: rem(216);
     padding: rem(56) rem(40);
-
   }
 
-  .logo {    
+  @include media(laptop) {
+    margin-top: rem(180);
+    height: rem(244);
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+    @include container-laptop;
+  }
+
+  .logo {
     font-family: $big-shoulders-display;
     font-weight: 900;
     font-size: 24px;
     line-height: math.div(20, 24);
     text-transform: uppercase;
     width: rem(120);
-  }
 
-  .description {    
-    font-size: rem(16);
-    line-height: math.div(26, 16);   
-
-    @include media(tablet){
-      max-width: rem(281);
-      margin-left: rem(-39);
+    @include media(laptop) {
+      font-size: 34px;
+      line-height: 31px;
+      width: rem(159);
     }
   }
 
-  .social-links{
+  .description {
+    font-size: rem(16);
+    line-height: math.div(26, 16);
+
+    @include media(tablet) {
+      max-width: rem(281);
+      margin-left: rem(-39);
+    }
+
+    @include media(laptop) {
+      max-width: rem(430);
+      font-size: 18px;
+      line-height: math.div(28, 18);
+      margin-left: rem(-69.5);
+    }
+  }
+
+  .social-links {
     display: flex;
     align-items: center;
     gap: rem(20);
     width: rem(100);
 
+    a:hover .svg-path {
+      fill: color(gold);
+    }
   }
 }

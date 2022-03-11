@@ -13,9 +13,30 @@ export default function Footer() {
         week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
       </p>
       <div className="social-links">
-        <IconFacebook />
-        <IconInstagram />
-        <IconTwitter />
+        <a
+          href="http://www.facebook.com"
+          aria-label="our facebook page"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IconFacebook />
+        </a>
+        <a
+          href="http://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="our instagram page"
+        >
+          <IconInstagram />
+        </a>
+        <a
+          href="http://www.twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label='our twitter page'
+        >
+<IconTwitter />
+        </a>        
       </div>
     </footer>
   );
