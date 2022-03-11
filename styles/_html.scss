@@ -18,3 +18,9 @@ a {
 ul {
   list-style-type: none;
 }
+
+main {
+  position: relative;
+  max-width: rem(1520);
+  margin-inline: auto;  
+}

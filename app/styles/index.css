@@ -18,6 +18,12 @@ ul {
   list-style-type: none;
 }
 
+main {
+  position: relative;
+  max-width: 95rem;
+  margin-inline: auto;
+}
+
 .rt-button-link {
   display: inline-flex;
   height: 4.5rem;
@@ -62,11 +68,40 @@ ul {
     padding-right: 5.2083333333%;
   }
 }
+@media screen and (min-width: 75rem) {
+  .rt-section-hero {
+    display: block;
+    padding: 11.8125rem calc(min(50vw, 760px) - 550px) 0;
+  }
+}
 
+@media screen and (min-width: 75rem) {
+  .rt-section-hero .background {
+    position: absolute;
+    height: 50rem;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+  }
+  .rt-section-hero .background::before {
+    content: "";
+    display: block;
+    width: calc(min(50vw, 760px) - 550px + 17.8125rem);
+    height: 50rem;
+    background-color: #151515;
+  }
+}
 .rt-section-hero .background .bg-image-container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 75rem) {
+  .rt-section-hero .background .bg-image-container {
+    width: 33.75rem;
+  }
 }
 .rt-section-hero .background .bg-image {
   width: 100%;
@@ -75,11 +110,25 @@ ul {
 
 .rt-section-hero .content {
   margin: 2rem 4.2666666667% 0;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 2rem;
 }
 @media screen and (min-width: 45rem) {
   .rt-section-hero .content {
     margin: 9.0625rem 0 0 -3rem;
     max-width: 32.125rem;
+    gap: 3rem;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .rt-section-hero .content {
+    margin: 0;
+    grid-template-columns: 28.5rem 21.875rem;
+    max-width: unset;
+    width: 100%;
+    justify-content: space-between;
+    gap: 4rem;
   }
 }
 .rt-section-hero .content .title {
@@ -89,24 +138,39 @@ ul {
   line-height: 0.9166666667;
   color: #151515;
 }
+@media screen and (min-width: 75rem) {
+  .rt-section-hero .content .title {
+    width: 28.5rem;
+    position: relative;
+  }
+  .rt-section-hero .content .title::before {
+    content: "MODERN ART GALLERY";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Big Shoulders Display", cursive;
+    font-size: clamp(3.75rem, 9.1145833333vw, 6rem);
+    font-weight: 900;
+    line-height: 0.9166666667;
+    color: #151515;
+    color: white;
+    clip-path: polygon(0 0, 17.8125rem 0, 17.8125rem 100%, 0 100%);
+  }
+}
 .rt-section-hero .content .description {
-  margin-top: 2rem;
   font-size: clamp(1.125rem, 2.34375vw, 1.375rem);
   line-height: 1.5555555556;
   color: #444444;
 }
-@media screen and (min-width: 45rem) {
+@media screen and (min-width: 75rem) {
   .rt-section-hero .content .description {
-    margin-top: 3rem;
+    width: 21.875rem;
   }
 }
-.rt-section-hero .content .rt-button-link {
-  margin-top: 2rem;
-}
-@media screen and (min-width: 45rem) {
+@media screen and (min-width: 75rem) {
   .rt-section-hero .content .rt-button-link {
-    margin-top: 3rem;
+    grid-column: 2/span 1;
   }
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../styles/_html.scss%22,%22../../styles/_button-link.scss%22,%22../../styles/_mixins.scss%22,%22../../styles/_section-hero.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AACQ;AACR;AAAA;AAAA;EAGE;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;;;AChBF;EACE;EACA;;AAEA;EACE;;AAGF;AAAA;EAEE;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA,aCgBoB;EDfpB;EACA;EACA;;AAEA;EACE;;AAIJ;EACE;EACA;;AAIA;EACE;;AAEF;EACE;;;ACzBJ;ECdF;IAEI;IACA;IACA;;;;AAKF;EACE;EACA;EACA;;AAGF;EACE;EACA;;;AAIJ;EACE;;ADRA;ECOF;IAII;IACA;;;AAGF;EACE,aDKoB;ECJpB;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA;;AD3BF;ECuBA;IAOI;;;AAIJ;EACE;;ADnCF;ECkCA;IAII%22,%22file%22:%22index.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../styles/_html.scss%22,%22../../styles/_button-link.scss%22,%22../../styles/_mixins.scss%22,%22../../styles/_section-hero.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AACQ;AACR;AAAA;AAAA;EAGE;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA;EACA;;;ACtBF;EACE;EACA;;AAEA;EACE;;AAGF;AAAA;EAEE;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA,aCgBoB;EDfpB;EACA;EACA;;AAEA;EACE;;AAIJ;EACE;EACA;;AAIA;EACE;;AAEF;EACE;;;ACzBJ;ECJF;IAEI;IACA;IACA;;;ADAF;ECJF;IAQI;IACA;;;;ADLF;ECSF;IAEI;IACA;IACA;IACA;IACA;IACA;IACA;;EAEA;IACE;IACA;IDfJ,OCgBkB;IDflB,QCeoD;IAChD;;;AAIJ;EACE;EACA;EACA;;AD9BF;EC2BA;IAMI;;;AAIJ;EACE;EACA;;;AAIJ;EACE;EACA;EACA;EACA;;AD/CA;EC2CF;IAOI;IACA;IACA;;;ADpDF;EC2CF;IAaI;IACA;IACA;IACA;IACA;IACA;;;AAGF;EA3EA,aDgCsB;EC/BtB;EACA;EACA;EACA;;ADOA;ECgEA;IAII;IACA;;EAEA;IACE;IACA;IACA;IACA;IAtFN,aDgCsB;IC/BtB;IACA;IACA;IACA;IAoFM;IACA;;;AAKN;EACE;EACA;EACA;;ADtFF;ECmFA;IAMI;;;ADzFJ;EC6FA;IAEI%22,%22file%22:%22index.css%22%7D */
