@@ -94,13 +94,13 @@ main {
     background-color: #151515;
   }
 }
-.rt-section-hero .background .bg-image-container {
+.rt-section-hero .background .image-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media screen and (min-width: 75rem) {
-  .rt-section-hero .background .bg-image-container {
+  .rt-section-hero .background .image-container {
     width: 33.75rem;
   }
 }
