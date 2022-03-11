@@ -45,11 +45,11 @@ $padding-left-laptop: calc(Min(50vw, 720px) - 556px);
   padding-inline: $padding-right-laptop $padding-left-laptop;
 }
 
-@mixin margin-container-mobile{
+@mixin margin-container-mobile {
   margin-inline: math.percentage(16/375);
 }
 
-@mixin margin-container-tablet{
+@mixin margin-container-tablet {
   max-width: rem(689);
   margin-inline: auto;
 }

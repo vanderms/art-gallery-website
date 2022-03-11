@@ -214,8 +214,18 @@ main {
     max-width: 43.0625rem;
     margin-inline: auto;
     gap: 0.6875rem;
-    grid-template-columns: 40.6386066763% 1fr 40.6386066763%;
+    grid-template-columns: 17.5rem 1fr 17.5rem;
     grid-template-rows: 25rem 19.5625rem auto;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .rt-section-gallery {
+    margin: 11.25rem 0 0 0;
+    max-width: unset;
+    padding-inline: calc(min(50vw, 720px) - 555px) calc(min(50vw, 720px) - 556px);
+    grid-template-columns: 27.8125rem 1fr 27.8125rem;
+    grid-template-rows: 25rem 19.5625rem auto;
+    gap: 1.875rem;
   }
 }
 .rt-section-gallery .image-container {
@@ -249,6 +259,12 @@ main {
     margin-bottom: 0;
   }
 }
+@media screen and (min-width: 75rem) {
+  .rt-section-gallery .content {
+    margin-top: 3.75rem;
+    max-width: 21.875rem;
+  }
+}
 .rt-section-gallery .content .h2-title {
   font-family: "Big Shoulders Display", cursive;
   font-weight: 900;
@@ -256,6 +272,12 @@ main {
   text-transform: uppercase;
   line-height: 0.9;
   color: #151515;
+}
+@media screen and (min-width: 75rem) {
+  .rt-section-gallery .content .h2-title {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
 }
 .rt-section-gallery .content .h2-description {
   margin-top: 1.3125rem;
@@ -266,6 +288,12 @@ main {
 @media screen and (min-width: 45rem) {
   .rt-section-gallery .content .h2-description {
     margin-top: 1.5rem;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .rt-section-gallery .content .h2-description {
+    font-size: 1.375rem;
+    line-height: math(32, 22);
   }
 }
 .rt-section-gallery .inspired {
@@ -280,6 +308,11 @@ main {
     flex-direction: column;
   }
 }
+@media screen and (min-width: 75rem) {
+  .rt-section-gallery .inspired {
+    padding: 0 2.9375rem 0 3rem;
+  }
+}
 .rt-section-gallery .inspired .h3-title {
   font-family: "Big Shoulders Display", cursive;
   font-weight: 900;
@@ -288,11 +321,24 @@ main {
   color: #fff;
   text-transform: uppercase;
 }
+@media screen and (min-width: 75rem) {
+  .rt-section-gallery .inspired .h3-title {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
 .rt-section-gallery .inspired .h3-description {
   margin-top: 1.5rem;
   font-size: 1.125rem;
   line-height: 1.5555555556;
   color: #fff;
 }
+@media screen and (min-width: 75rem) {
+  .rt-section-gallery .inspired .h3-description {
+    margin-top: 2rem;
+    font-size: 1.375rem;
+    line-height: 1.4545454545;
+  }
+}
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../styles/_html.scss%22,%22../../styles/_button-link.scss%22,%22../../styles/_mixins.scss%22,%22../../styles/_section-hero.scss%22,%22../../styles/_section-gallery.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AACQ;AACR;AAAA;AAAA;EAGE;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA;EACA;;;ACtBF;EACE;EACA;;AAEA;EACE;;AAGF;AAAA;EAEE;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA,aCgBoB;EDfpB;EACA;EACA;;AAEA;EACE;;AAIJ;EACE;EACA;;AAIA;EACE;;AAEF;EACE;;;ACzBJ;ECIF;IAEI;IACA;IACA;;;ADRF;ECIF;IAQI;IACA;IACA;IDaF;;;;AA3BA;ECmBF;IAEI;IACA;IACA;IACA;IACA;IACA;IACA;;EAEA;IACE;IACA;IDzBJ,OC0BkB;IDzBlB,QCyByD;IACrD;;;AAIJ;EACE;EACA;EACA;;ADxCF;ECqCA;IAMI;;;AAIJ;EACE;EACA;;;AAIJ;EACE;EDvBA;ECyBA;EACA;EACA;;AD1DA;ECqDF;IAQI;IACA;IACA;;;AD/DF;ECqDF;IAcI;IACA;IACA;IACA;IACA;IACA;;;AAGF;EAxFA,aDkCsB;ECjCtB;EACA;EACA;EACA;;ADSA;EC2EA;IAjFE;IACA;;;ADKF;EC2EA;IA5EE;IACA;;;ADAF;EC2EA;IAII;IACA;;EAEA;IACE;IACA;IACA;IACA;IAnGN,aDkCsB;ICjCtB;IACA;IACA;IACA;IAiGM;IACA;;;ADzFN;ECkFI;IAxFF;IACA;;;ADKF;ECkFI;IAnFF;IACA;;;AA8FF;EACE;EACA;EACA;;ADjGF;EC8FA;IAMI;IACA;IACA;;;ADtGJ;EC0GA;IAEI;;;;AC1HN;EACE;EF4CA;EE1CA;EACA;EACA;;AFSA;EEdF;IFiDE;IACA;IEzCE;IACA;IACA;;;AAGF;EACE;EACA;EACA;;AAGF;EACE;;AFPF;EEMA;IAII;IACA;;;AFXJ;EEeA;IAEI;IACA;;;AAIJ;EACE;EACA;;AFxBF;EEsBA;IAKI;IACA;IACA;;;AAGF;EACE,aFZkB;EEalB;EACA;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA;;AF7CJ;EEyCE;IAOI;;;AAKN;EACE;EACA;;AFvDF;EEqDA;IAKI;IACA;IACA;IACA;;;AAGF;EACE,aF5CkB;EE6ClB;EACA;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA%22,%22file%22:%22index.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../styles/_html.scss%22,%22../../styles/_button-link.scss%22,%22../../styles/_mixins.scss%22,%22../../styles/_section-hero.scss%22,%22../../styles/_section-gallery.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AACQ;AACR;AAAA;AAAA;EAGE;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA;EACA;;;ACtBF;EACE;EACA;;AAEA;EACE;;AAGF;AAAA;EAEE;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA,aCgBoB;EDfpB;EACA;EACA;;AAEA;EACE;;AAIJ;EACE;EACA;;AAIA;EACE;;AAEF;EACE;;;ACzBJ;ECIF;IAEI;IACA;IACA;;;ADRF;ECIF;IAQI;IACA;IACA;IDaF;;;;AA3BA;ECmBF;IAEI;IACA;IACA;IACA;IACA;IACA;IACA;;EAEA;IACE;IACA;IDzBJ,OC0BkB;IDzBlB,QCyByD;IACrD;;;AAIJ;EACE;EACA;EACA;;ADxCF;ECqCA;IAMI;;;AAIJ;EACE;EACA;;;AAIJ;EACE;EDvBA;ECyBA;EACA;EACA;;AD1DA;ECqDF;IAQI;IACA;IACA;;;AD/DF;ECqDF;IAcI;IACA;IACA;IACA;IACA;IACA;;;AAGF;EAxFA,aDkCsB;ECjCtB;EACA;EACA;EACA;;ADSA;EC2EA;IAjFE;IACA;;;ADKF;EC2EA;IA5EE;IACA;;;ADAF;EC2EA;IAII;IACA;;EAEA;IACE;IACA;IACA;IACA;IAnGN,aDkCsB;ICjCtB;IACA;IACA;IACA;IAiGM;IACA;;;ADzFN;ECkFI;IAxFF;IACA;;;ADKF;ECkFI;IAnFF;IACA;;;AA8FF;EACE;EACA;EACA;;ADjGF;EC8FA;IAMI;IACA;IACA;;;ADtGJ;EC0GA;IAEI;;;;AC1HN;EACE;EF4CA;EE1CA;EACA;EACA;;AFSA;EEdF;IFiDE;IACA;IEzCE;IACA;IACA;;;AFGF;EEdF;IAeI;IACA;IFyBF;IEvBE;IACA;IACA;;;AAGF;EACE;EACA;EACA;;AAGF;EACE;;AFhBF;EEeA;IAII;IACA;;;AFpBJ;EEwBA;IAEI;IACA;;;AAIJ;EACE;EACA;;AFjCF;EE+BA;IAKI;IACA;IACA;;;AFtCJ;EE+BA;IAWI;IACA;;;AAGF;EACE,aF1BkB;EE2BlB;EACA;EACA;EACA;EACA;;AFpDJ;EE8CE;IASI;IACA;;;AAIJ;EACE;EACA;EACA;EACA;;AFhEJ;EE4DE;IAOI;;;AFnEN;EE4DE;IAWI;IACA;;;AAKN;EACE;EACA;;AF/EF;EE6EA;IAKI;IACA;IACA;IACA;;;AFrFJ;EE6EA;IAYI;;;AAGF;EACE,aFxEkB;EEyElB;EACA;EACA;EACA;EACA;;AFlGJ;EE4FE;IASI;IACA;;;AAIJ;EACE;EACA;EACA;EACA;;AF9GJ;EE0GE;IAOI;IACA;IACA%22,%22file%22:%22index.css%22%7D */

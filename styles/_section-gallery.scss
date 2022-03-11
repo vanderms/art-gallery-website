@@ -11,8 +11,17 @@
   @include media(tablet) {
     @include margin-container-tablet;
     gap: rem(11);
-    grid-template-columns: math.percentage(280/689) 1fr math.percentage(280/689);
+    grid-template-columns: rem(280) 1fr rem(280);
     grid-template-rows: rem(400) rem(313) auto;
+  }
+
+  @include media(laptop) {
+    margin: rem(180) 0 0 0;
+    max-width: unset;
+    @include container-laptop;
+    grid-template-columns: rem(445) 1fr rem(445);
+    grid-template-rows: rem(400) rem(313) auto;
+    gap: rem(30);
   }
 
   .image-container {
@@ -47,6 +56,11 @@
       margin-bottom: 0;
     }
 
+    @include media(laptop) {
+      margin-top: rem(60);
+      max-width: rem(350);
+    }
+
     .h2-title {
       font-family: $big-shoulders-display;
       font-weight: 900;
@@ -54,6 +68,11 @@
       text-transform: uppercase;
       line-height: math.div(45, 50);
       color: color(almost-black);
+
+      @include media(laptop) {
+        font-size: rem(60);
+        line-height: 1;
+      }
     }
 
     .h2-description {
@@ -64,6 +83,11 @@
 
       @include media(tablet) {
         margin-top: rem(24);
+      }
+
+      @include media(laptop) {
+        font-size: rem(22);
+        line-height: math(32, 22);
       }
     }
   }
@@ -79,6 +103,10 @@
       flex-direction: column;
     }
 
+    @include media(laptop) {
+      padding: 0 rem(47) 0 rem(48);
+    }
+
     .h3-title {
       font-family: $big-shoulders-display;
       font-weight: 900;
@@ -86,6 +114,11 @@
       line-height: math.div(45, 50);
       color: color(white);
       text-transform: uppercase;
+
+      @include media(laptop) {
+        font-size: rem(60);
+        line-height: 1;
+      }
     }
 
     .h3-description {
@@ -93,6 +126,12 @@
       font-size: rem(18);
       line-height: math.div(28, 18);
       color: color(white);
+
+      @include media(laptop) {
+        margin-top: rem(32);
+        font-size: rem(22);
+        line-height: math.div(32, 22);
+      }
     }
   }
 }
