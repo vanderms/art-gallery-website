@@ -3,17 +3,27 @@
 
 @mixin heading-typography {
   font-family: $big-shoulders-display;
-  font-size: clamp(rem(60), calc((70 / 768) * 100vw), rem(96));
+  font-size: rem(60);
   font-weight: 900;
   line-height: math.div(55, 60);
   color: color(almost-black);
+
+  @include media(tablet) {
+    font-size: rem(70);
+    line-height: math.div(65, 70);
+  }
+
+  @include media(laptop) {
+    font-size: rem(96);
+    line-height: math.div(88, 96);
+  }
 }
 
 .rt-section-hero {
   @include media(tablet) {
     display: grid;
     grid-template-columns: rem(437) 1fr;
-    padding-right: math.percentage(40 / 768);
+    padding-right: calc(50vw - rem(344.5));
   }
 
   @include media(laptop) {
@@ -100,13 +110,14 @@
   }
 
   .description {
-    font-size: clamp(rem(18), calc((18 / 768) * 100vw), rem(22));
+    font-size: rem(18);
     line-height: math.div(28, 18);
     color: color(dark-grey);
 
     @include media(laptop) {
       width: rem(350);
       line-height: math.div(32, 22);
+      font-size: rem(22);
     }
   }
 
