@@ -20,7 +20,7 @@ ul {
 
 main {
   position: relative;
-  max-width: 95rem;
+  max-width: 90rem;
   margin-inline: auto;
 }
 
@@ -73,7 +73,7 @@ main {
     height: 50rem;
     display: block;
     padding-top: 11.8125rem;
-    padding-inline: calc(min(50vw, 760px) - 555px) calc(min(50vw, 760px) - 556px);
+    padding-inline: calc(min(50vw, 720px) - 555px) calc(min(50vw, 720px) - 556px);
   }
 }
 
@@ -90,7 +90,7 @@ main {
   .rt-section-hero .background::before {
     content: "";
     display: block;
-    width: calc(min(50vw, 760px) - 556px + 17.8125rem);
+    width: calc(min(50vw, 720px) - 556px + 17.8125rem);
     height: 50rem;
     background-color: #151515;
   }
