@@ -38,10 +38,9 @@ $colors: (
 
 $big-shoulders-display: 'Big Shoulders Display', cursive;
 
-
 $padding-right-laptop: calc(Min(50vw, 760px) - 555px);
 $padding-left-laptop: calc(Min(50vw, 760px) - 556px);
 
-@mixin container-laptop{
+@mixin container-laptop {
   padding-inline: $padding-right-laptop $padding-left-laptop;
 }

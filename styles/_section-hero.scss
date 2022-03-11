@@ -1,8 +1,6 @@
 @use './mixins' as *;
 @use 'sass:math';
 
-
-
 @mixin heading-typography {
   font-family: $big-shoulders-display;
   font-size: clamp(rem(60), calc((70 / 768) * 100vw), rem(96));
