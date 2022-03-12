@@ -1,19 +1,19 @@
 @use './mixins' as *;
 
 .rt-section-map {
-  @include size(100%, rem(550));
-
-  @include media(tablet) {
-    @include size(100%, rem(600));
-  }
+ 
 
   .map-container {
-    position: absolute;
-    inset: 0 0 0 0;
-    z-index: -1;
+    @include size(100%, rem(550));
+
+    @include media(tablet) {
+      @include size(100%, rem(600));
+    }    
   }
 
   .rt-button-link {
+    position: absolute;
+    z-index: 999;
     @include media(tablet) {
       margin-left: rem(39);
     }

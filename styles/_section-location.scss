@@ -14,6 +14,12 @@
     justify-content: space-between;
   }
 
+  @include media(laptop) {
+    padding-top: rem(104);
+    padding-bottom: rem(128);
+    @include container-laptop;
+  }
+
   .title {
     font-family: $big-shoulders-display;
     font-weight: 900;
@@ -29,6 +35,12 @@
       font-size: rem(55);
       line-height: rem(50);
     }
+
+    @include media(laptop) {
+      max-width: rem(350);
+      font-size: rem(70);
+      line-height: rem(70);
+    }
   }
 
   .address {
@@ -38,9 +50,13 @@
     font-style: normal;
     @include margin-container-mobile;
 
-    @include media(tablet){
+    @include media(tablet) {
       margin: 0;
-      max-width: rem(398);      
+      max-width: rem(398);
+    }
+
+    @include media(laptop) {
+      max-width: rem(540);
     }
 
     .street {
@@ -50,12 +66,30 @@
       line-height: rem(32);
       text-transform: uppercase;
       color: color(gold);
+
+      @include media(laptop) {
+        font-size: rem(36);
+        line-height: rem(36);
+      }
     }
 
     .description,
     .complement {
       font-size: rem(18);
       line-height: rem(28);
+
+      @include media(laptop) {
+        font-size: rem(22);
+        line-height: rem(32);
+      }
+    }
+
+    .description {
+      margin-top: rem(12);
+    }
+
+    .complement {
+      margin-top: rem(4);
     }
   }
 }
