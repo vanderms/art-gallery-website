@@ -30,7 +30,14 @@ export default function Map() {
         )
         .addTo(map);
 
-      leaflet.marker(location).addTo(map);
+        const customIcon = leaflet.icon({
+          iconUrl: '/assets/icon-location.svg',
+          iconSize: [66, 88],
+          iconAnchor: [22, 94],
+          popupAnchor: [-3, -76],          
+      });
+
+      leaflet.marker(location, {icon: customIcon }).addTo(map);
     }
     return () => {
       if (map) {
