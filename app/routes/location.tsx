@@ -1,10 +1,10 @@
-import Map from "~/components/ui/map/map";
+import SectionMap from "~/components/sections/map/map";
 
 export default function Location() { 
 
   return (
     <main>
-      <Map />
+      <SectionMap />
     </main>
   );
 }

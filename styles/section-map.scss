@@ -1,0 +1,14 @@
+@use './mixins' as *;
+
+
+.rt-section-map{
+  @include size(100%, rem(550));
+  .map-container{
+    position: absolute;
+    inset: 0 0 0 0;  
+    z-index: -1;
+  }
+  
+  
+  
+}
