@@ -70,3 +70,19 @@
     }
   }
 }
+
+.rt-page-location .rt-footer {
+  margin-top: 0;
+  background-color: color(gold);
+  color: color(almost-black);
+
+  .social-links {
+    .svg-path {
+      fill: color(almost-black);
+    }
+
+    a:hover .svg-path {
+      fill: color(white);
+    }
+  }
+}
