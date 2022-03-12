@@ -33,10 +33,10 @@ export default function Footer() {
           href="http://www.twitter.com"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label='our twitter page'
+          aria-label="our twitter page"
         >
-<IconTwitter />
-        </a>        
+          <IconTwitter />
+        </a>
       </div>
     </footer>
   );

@@ -1,0 +1,12 @@
+@use './mixins' as *;
+
+
+.rt-leaflet-map{  
+  
+  .map-root{
+    @include size(100%, 500px);
+  }
+  
+  
+  
+}
